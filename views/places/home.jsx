@@ -7,9 +7,10 @@ function home () {
             <main>
     <h1>HOME</h1>
     <div>
-      <img src="/images/chia-fruit-drink.jpg" alt="Chia Fruit Shake" />
+      <img src="/images/restaurant.jpg" alt="Inside Restaurant" />
       <div>
-        Photo by <a href="AUTHOR_LINK">Brenda Godinez</a> on <a href="UNSPLASH_LINK">Unsplash</a>
+        Photo by <a href="https://unsplash.com/es/@ninjason?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Leung</a> on <a href="https://unsplash.com/s/photos/restaurants?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
       </div>
     </div>
     <a href="/places">
@@ -22,3 +23,4 @@ function home () {
 }
 
 module.exports = home
+

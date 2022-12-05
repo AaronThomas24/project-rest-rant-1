@@ -9,6 +9,7 @@ app.get("/", (req, res) => {
       state: "WA",
       cuisines: "Thai, Pan-Asian",
       pic: "/images/h-thai-ml-tables.png",
+      pic: "/images/thai food.jpg",
     },
     {
       name: "Coding Cat Cafe",
@@ -16,6 +17,7 @@ app.get("/", (req, res) => {
       state: "AZ",
       cuisines: "Coffee, Bakery",
       pic: "/images/coffee-cat.jpg",
+      pic: "/images/espresso.jpg",
     },
   ];
 
