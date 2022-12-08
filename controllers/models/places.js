@@ -1,13 +1,12 @@
-const router = require("express").Router();
-const db = require("../models");
+const mongoose = require("mongoose");
 
-router.post("/", (req, res) => {
-  db.Place.create(req.body)
-    .then(() => {
-      res.redirect("/places");
-    })
-    .catch((err) => {
-      console.log("err", err);
-      res.render("error404");
-    });
-})((module.exports = mongoose.model("Place", placeSchema)));
+const placeSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  pic: String,
+  cuisines: { type: String, required: true },
+  city: { type: String, default: "Anytown" },
+  state: { type: String, default: "USA" },
+  founded: Number,
+});
+
+module.exports = mongoose.model("Place", placeSchema);
